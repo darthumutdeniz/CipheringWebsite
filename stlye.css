@@ -1,0 +1,16 @@
+.container{
+    /*margin-top: 50vh;
+    margin-left: 50vh;*/
+    align-items: center;
+    text-align: center;
+    margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inputs{
+
+}
