@@ -35,7 +35,6 @@ function Vigenere(int){
     if (anahtarNums.length === 0){
         anahtarNums.push(0);
     }
-    console.log(anahtarNums);
 
     lowerText.split("").forEach(element => {
         if(alpabeth.includes(element)) 
@@ -43,7 +42,6 @@ function Vigenere(int){
             textNums.push(alpabeth.indexOf(element));}
         else {textNums.push(element + "."); }
     });
-    console.log(textNums);
 
     let j = 0;
     for(let i = 0; i < textNums.length; i++)
@@ -67,8 +65,6 @@ function Vigenere(int){
             newText += textNums[i][0];
         }
     }
-    console.log(newtextNums);
-    console.log(newText);
     document.getElementById("newText").innerHTML = newText;
 
 }

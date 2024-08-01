@@ -1,16 +1,70 @@
+.body{
+    margin: 0;
+}
+
 .container{
     /*margin-top: 50vh;
     margin-left: 50vh;*/
-    align-items: center;
-    text-align: center;
-    margin-top: 50vh;
+    /*align-items: center;
+    text-align: center;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 4px;
+    flex-direction:row;
+    flex-wrap: wrap;
 }
 
-.inputs{
+.textContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
 
+}
+
+.inputText{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    height: 50vh;
+    width: 95%;
+}
+
+.secondRow{
+    width: 100%;
+    margin-left: 2.5%;
+    display: flex;
+    /*margin-left: 2.5%;
+    margin-right: 2.5%;*/
+    /*align-items: start;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    flex-direction:row;*/
+}
+
+.Key{
+    width: 45%;
+    margin-right: 2%;
+    /*margin-left: 2.5%;*/
+}
+
+.alphabethHolder{
+    text-align: right;
+    width: 50%;
+}
+
+.alphabeth{
+    width: 90%;
+    margin-right: 5%;
+}
+
+.cbutton{
+    margin-right: 2%;
+    width: 70px;
+
+}
+.dbutton{
+    width: 70px;
+    margin-right: 0;
 }
