@@ -11,14 +11,13 @@ DecipherButton.addEventListener("click", () => {
     Vigenere(-1);
 });
 
-function Vigenere(int){
+function Vigenere(CypyreIndex){
     let input = document.getElementById("inputText").value;
     let alpabeth = document.getElementById("alphabeth").value;
     if (alpabeth === "") 
     {
         alpabeth = alpabethEn;
     }
-    //console.log(alpabeth);
     let key = document.getElementById("key").value;
     let lowerText = input.toLowerCase();
     let lowerKey = key.toLowerCase();
@@ -48,7 +47,7 @@ function Vigenere(int){
     {
         if(typeof(textNums[i]) === "number" )
         {
-            let newTextNum = (textNums[i] + int * anahtarNums[j % anahtarNums.length]) % alpabeth.split("").length;
+            let newTextNum = (textNums[i] + CypyreIndex * anahtarNums[j % anahtarNums.length]) % alpabeth.split("").length;
             if (newTextNum < 0) { newTextNum = alpabeth.split("").length + newTextNum; }
             newtextNums.push(newTextNum);
             j++;

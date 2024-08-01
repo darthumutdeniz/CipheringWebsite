@@ -1,12 +1,9 @@
-.body{
-    margin: 0;
+body{
+    background-image: url(png/Background.png);
+    background-size: cover;
 }
 
 .container{
-    /*margin-top: 50vh;
-    margin-left: 50vh;*/
-    /*align-items: center;
-    text-align: center;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,29 +15,26 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 4px;
     align-items: center;
 
 }
 
 .inputText{
+    background-image: url(png/TextInputBG.jpeg);
+    background-size: cover;
+    background-color: #ffdea5;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     height: 50vh;
     width: 95%;
+    resize: none;
 }
 
 .secondRow{
     width: 100%;
     margin-left: 2.5%;
     display: flex;
-    /*margin-left: 2.5%;
-    margin-right: 2.5%;*/
-    /*align-items: start;
-    text-align: start;
-    display: flex;
-    justify-content: start;
-    flex-direction:row;*/
+    justify-content: space-evenly;
 }
 
 .Key{
@@ -56,15 +50,45 @@
 
 .alphabeth{
     width: 90%;
+    height: 100%;
     margin-right: 5%;
 }
 
 .cbutton{
     margin-right: 2%;
-    width: 70px;
 
 }
 .dbutton{
-    width: 70px;
     margin-right: 0;
+}
+
+button{
+    background-image: url(png/Button.png);
+    background-size: cover;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.newTextCover{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.newText{
+    background-image: url(png/TextInputBG.jpeg);
+    background-size: cover;
+    background-color: #ffdea5;
+    border: none;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    height: 50vh;
+    width: 95%;
+    resize: none;
+}
+.newText:hover{
+    cursor: auto;
 }

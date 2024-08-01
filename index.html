@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Vigenere Cipher</title>
   <link rel="stylesheet" href="stlye.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <body>
+  <h1>Vigenre Cipher</h1>
   <div class="textContainer">
-    <input type="text" class="inputText" 
-    placeholder="Text you will cipher" id="inputText">
+    <textarea class="inputText" 
+    placeholder="Text you will cipher" id="inputText"></textarea>
   </div>
   <div class="container">
     <div class="secondRow">
@@ -21,7 +23,9 @@
         placeholder="alphabeth" id="alphabeth">
       </div>
     </div>
-    <p id="newText">This is the new text</p>
+  </div>
+  <div class="newTextCover">
+    <textarea disabled class="newText" id="newText">This is the new text</textarea>
   </div>
   <script src="cipher.js"></script>
 </body>
